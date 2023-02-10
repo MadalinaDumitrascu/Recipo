@@ -37,13 +37,13 @@ const RecipePage = () => {
             if (!user) navigate('/Subscriptions', { replace: true })
           }
           setRecipe(res.data)
-          if (i18next == 'en') setSteps(res.data.steps.split('\\\\'))
-          else (setSteps(res.data.translate.split('\\\\')))
+          setSteps(res.data.steps.split('\\\\'))
+
         })
 
         await axios.get('https://localhost:7291/api/Ingredients', { withCredentials: true }).then(res => {
-          if (i18next == 'en') setIngredients(res.data)
-          else (setIngredients(res.data.translate))
+          setIngredients(res.data)
+
         })
       }
       fetchData()
