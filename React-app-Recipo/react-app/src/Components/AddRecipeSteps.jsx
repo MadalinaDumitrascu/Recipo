@@ -8,8 +8,7 @@ const AddRecipeSteps = () => {
     const [isDone, setDone] = useState(false)
   const [stepNumber, setStepNumber] = useState(1);
     const StepElements = document.querySelectorAll(".step");
-    console.log(StepElements)
-    console.log(steps);
+    
 
   useEffect(() => {
     let stepString = "";
@@ -21,25 +20,21 @@ const AddRecipeSteps = () => {
       }
     });
     setSteps(stepString);
-    console.log(steps);
   }, [StepElements, isDone, stepNumber]);
 
   const DecreaseStepNumber = () => {
     if (stepNumber > 1) {
         setStepNumber(stepNumber - 1);
-        console.log(steps)
     } else setStepNumber(1);
   };
 
   const IncreaseStepNumber = () => {
       if (stepNumber >= 1 && stepNumber < 8) {
       setStepNumber(stepNumber + 1);
-        console.log(steps);
     }
   };
     const updateSteps = () => {
         setDone(!isDone)
-        console.log(steps);
   }
   return (
     <div className="h-[45vh]">

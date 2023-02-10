@@ -46,7 +46,6 @@ const  IngredientsSection = ({search, filter, ParentCallback}) => {
     }
   }
   
-  console.log(setSelected)
 
   return (
     <div className='flex flex-col'>

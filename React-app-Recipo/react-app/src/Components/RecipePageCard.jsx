@@ -14,7 +14,6 @@ const RecipePageCard = ({
   User,
 }) => {
   const [favorite, setFavorite] = React.useState(Favorite);
-console.log(steps)
   const navigate = useNavigate();
   const RecipeSteps = steps.split("\\\\");
   const toggleHeart = () => {
@@ -23,12 +22,12 @@ console.log(steps)
           .get(`https://localhost:7291/api/Favorites/${Id}`, {
             withCredentials: true,
           })
-          .then((res) => console.log(res))
+          .then((res) => {})
       : axios
           .delete(`https://localhost:7291/api/Favorites/${Id}`, {
             withCredentials: true,
           })
-          .then((res) => console.log(res));
+          .then(res => {});
     setFavorite(!favorite);
   };
   const ToRecipe = (e) => {

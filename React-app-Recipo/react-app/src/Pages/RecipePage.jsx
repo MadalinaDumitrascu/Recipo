@@ -16,7 +16,6 @@ const RecipePage = () => {
   const [isDone, setDone] = useState()
   const [steps, setSteps] = useState([])
   const [ingredients, setIngredients] = useState([])
-  const [translate, setTranslate] = useState([])
 
   React.useEffect(() => {
     axios.get('https://localhost:7291/api/Users/GetUser', { withCredentials: true }).then(res => {
@@ -38,12 +37,11 @@ const RecipePage = () => {
           }
           setRecipe(res.data)
           setSteps(res.data.steps.split('\\\\'))
-
         })
 
         await axios.get('https://localhost:7291/api/Ingredients', { withCredentials: true }).then(res => {
           setIngredients(res.data)
-
+          
         })
       }
       fetchData()

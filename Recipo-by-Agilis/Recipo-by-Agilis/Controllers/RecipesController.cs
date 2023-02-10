@@ -46,7 +46,6 @@ namespace Recipo_by_Agilis.Controllers
                 IsPremium = recipe.IsPremium,
                 Name = recipe.Name,
                 Steps = recipe.Steps,
-                
                 IngredientIds = _context.IngredientsInRecipes.AsEnumerable().Where(i => i.RecipeId == recipe.Id)
                     .Select(i => i.IngredientId).ToList(),
                 IngredientQuantity = _context.IngredientsInRecipes.AsEnumerable().Where(i => i.RecipeId == recipe.Id).Select(i => new IngredientDto()
@@ -78,7 +77,6 @@ namespace Recipo_by_Agilis.Controllers
                 IsPremium = recipe.IsPremium,
                 Name = recipe.Name,
                 Steps = recipe.Steps,
-               
             });
             await _context.SaveChangesAsync();
             _context.IngredientsInRecipes.AsEnumerable()
