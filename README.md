@@ -6,6 +6,7 @@
 
 ### Welcome to the latest recipes resource!  
 
+<img src="https://i.ibb.co/gW67VFD/Screenshot-15.png" alt="Screenshot-15" border="0" />
 
 1. Project Description
 
@@ -13,7 +14,7 @@ Recipo is an AspNetCore Web Api app, which will give you access to a multitude o
 You have the option to use one of our recipes just with the ingredints you have in your fridge or pantry, or you could check the closest supermarket and go buy the missing ingredient or just order it by a home delivery company.
 Create an account and subscribe to our app and you have the option to share your own recipes with the community.
 
-<img src="https://i.ibb.co/gW67VFD/Screenshot-15.png" alt="Screenshot-15" border="0" />
+<img src="https://i.ibb.co/cDGgtcx/Screenshot-17.png" alt="Screenshot-17" border="0" />
 
 2. Why we chose ASP.NET Core
 
@@ -50,7 +51,7 @@ Then you will have to install all the following packages:
 - Stripe.Net
 - Swashbuckle.AspNetCore
 
-
+<img src="https://i.ibb.co/BB7fKcG/Screenshot-18.png" alt="Screenshot-18" border="0" />
 5. Credits for this project:
 
  - mGuy09: https://github.com/mGuy09
