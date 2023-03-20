@@ -13,7 +13,7 @@ Recipo is an AspNetCore Web Api app, which will give you access to a multitude o
 You have the option to use one of our recipes just with the ingredints you have in your fridge or pantry, or you could check the closest supermarket and go buy the missing ingredient or just order it by a home delivery company.
 Create an account and subscribe to our app and you have the option to share your own recipes with the community.
 
-https://ibb.co/fNQSvGC
+<img src="https://i.ibb.co/gW67VFD/Screenshot-15.png" alt="Screenshot-15" border="0" />
 
 2. Why we chose ASP.NET Core
 
