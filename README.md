@@ -13,6 +13,8 @@ Recipo is an AspNetCore Web Api app, which will give you access to a multitude o
 You have the option to use one of our recipes just with the ingredints you have in your fridge or pantry, or you could check the closest supermarket and go buy the missing ingredient or just order it by a home delivery company.
 Create an account and subscribe to our app and you have the option to share your own recipes with the community.
 
+https://ibb.co/fNQSvGC
+
 2. Why we chose ASP.NET Core
 
 We chose ASP.NET Core because it can run on multiple platforms, including Windows, macOS, and Linux, which makes it a flexible and scalable option for building web APIs.  Also, ASP.NET Core is designed to be fast and lightweight, which means that it can handle high traffic loads and respond quickly to client requests.
